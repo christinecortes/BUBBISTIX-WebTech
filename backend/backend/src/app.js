@@ -41,7 +41,9 @@ app.use(
         ],
         connectSrc: [
           "'self'",
-          "http://localhost:4000"
+          "http://localhost:4000",
+          "https://bubbistix.up.railway.app",
+          "https://christinecortes.github.io"
         ]
       }
     },
@@ -49,9 +51,9 @@ app.use(
   })
 );
 
-// CORS (temporary wildcard for development)
+// CORS
 app.use(cors({
-  origin: "*"
+  origin: "https://christinecortes.github.io"
 }));
 
 // Middleware
