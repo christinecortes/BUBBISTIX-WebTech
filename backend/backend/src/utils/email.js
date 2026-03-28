@@ -1,19 +1,10 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendResetEmail = async (to, resetLink) => {
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    family: 4,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
-    }
-  });
-
-  await transporter.sendMail({
-    from: `"Bubbistix Support" <${process.env.EMAIL_USER}>`,
+  await resend.emails.send({
+    from: "Bubbistix Support <onboarding@resend.dev>",
     to,
     subject: "Reset your Bubbistix password",
     html: `
