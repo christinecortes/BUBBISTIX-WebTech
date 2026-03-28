@@ -877,8 +877,13 @@ button:hover {
     margin-right: 0.5rem;
 }
 
-.g_id_signin {
+css.g_id_signin {
     justify-content: center;
+    width: 100%;
+}
+
+.g_id_signin iframe {
+    width: 100% !important;
 }
 
 .create-account {
