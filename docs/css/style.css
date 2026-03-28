@@ -861,7 +861,7 @@ button:hover {
     justify-content: center;
     gap: 0.35rem;
     box-sizing: border-box;
-    margin-top: 0.75rem;
+    margin-top: 0;
     cursor: pointer;
     transition: box-shadow 0.2s, border-color 0.2s;
     margin-left: auto;
@@ -877,13 +877,8 @@ button:hover {
     margin-right: 0.5rem;
 }
 
-css.g_id_signin {
+.g_id_signin {
     justify-content: center;
-    width: 100%;
-}
-
-.g_id_signin iframe {
-    width: 100% !important;
 }
 
 .create-account {
