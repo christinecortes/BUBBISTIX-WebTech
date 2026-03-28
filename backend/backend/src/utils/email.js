@@ -4,7 +4,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendResetEmail = async (to, resetLink) => {
   await resend.emails.send({
-    from: "Bubbistix Support <onboarding@resend.dev>",
+    from: process.env.EMAIL_FROM,
     to,
     subject: "Reset your Bubbistix password",
     html: `
