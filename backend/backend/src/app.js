@@ -43,7 +43,7 @@ app.use(
           "'self'",
           "http://localhost:4000",
           "https://bubbistix.up.railway.app",
-          "https://christinecortes.github.io"
+          "https://bubbistix.store"
         ]
       }
     },
@@ -53,7 +53,7 @@ app.use(
 
 // CORS
 app.use(cors({
-  origin: "https://christinecortes.github.io"
+  origin: "https://bubbistix.store"
 }));
 
 // Middleware
